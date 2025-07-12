@@ -22,21 +22,31 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="py-16 px-6 md:px-20 bg-white">
-      <h2 className="text-3xl font-bold text-gray-900 mb-8">💼 Projects</h2>
+<motion.section
+  id="projects"
+  className="py-20 px-6 md:px-20 bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-100"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+>      <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-8">💼 Projects</h2>
 
       <div className="grid md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
               <motion.div
-    key={index}
-    className="border border-gray-200 rounded-lg p-6 shadow hover:shadow-lg transition"
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.5, delay: index * 0.2 }}
-  >
+  key={index}
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  whileHover={{ scale: 1.02, rotate: 0.2 }}
+    whileTap={{ scale: 0.98 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.4, delay: index * 0.2 }}
+  className="border border-gray-200 dark:border-gray-700 
+             rounded-lg p-6 bg-white dark:bg-gray-900 
+             text-gray-800 dark:text-gray-100 shadow-md hover:shadow-lg transition"
+>
             <h3 className="text-xl font-semibold text-blue-600 mb-2">{project.title}</h3>
-            <p className="text-gray-700 mb-4">{project.description}</p>
+            <p className="text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
 
             <div className="flex flex-wrap gap-2 mb-4">
               {project.tech.map((tag, i) => (
@@ -57,6 +67,6 @@ export default function Projects() {
           </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -1,12 +1,20 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { FaEnvelope, FaLinkedin, FaGithub, FaCode } from 'react-icons/fa';
 
 export default function Contact() {
   return (
-    <section className="py-16 px-6 md:px-20 bg-white">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">📬 Contact</h2>
+<motion.section
+  id="contact"
+  className="py-20 px-6 md:px-20 bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-100"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+>
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">📬 Contact</h2>
 
-      <p className="text-gray-700 mb-8">
+      <p className="text-gray-700 dark:text-gray-300 mb-8">
         Want to collaborate, refer, or just say hi? I’d love to connect.
       </p>
 
@@ -29,7 +37,7 @@ export default function Contact() {
         <a
           href="https://github.com/gulshansharma014"
           target="_blank"
-          className="flex items-center gap-3 text-gray-800 hover:underline"
+          className="flex items-center gap-3 text-blue-600 hover:underline"
         >
           <FaGithub /> github.com/gulshansharma014
         </a>
@@ -37,11 +45,11 @@ export default function Contact() {
         <a
           href="https://leetcode.com/Gulshansharma/"
           target="_blank"
-          className="flex items-center gap-3 text-gray-800 hover:underline"
+          className="flex items-center gap-3 text-blue-600 hover:underline"
         >
           <FaCode /> leetcode.com/Gulshansharma
         </a>
       </div>
-    </section>
+    </motion.section>
   );
 }

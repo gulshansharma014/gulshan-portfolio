@@ -5,3 +5,16 @@
 html {
   scroll-behavior: smooth;
 }
+
+.dark html {
+  background-color: #0f172a; /* Tailwind slate-900 or gray-900 */
+}
+
+body {
+  /* @apply bg-white text-gray-800; */
+  @apply bg-gray-900 text-gray-100;
+}
+
+.dark body {
+  @apply bg-gray-900 text-gray-100;
+}
