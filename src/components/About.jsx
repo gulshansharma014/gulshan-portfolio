@@ -1,28 +1,44 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
+
+const strengths = [
+  'Backend services and REST APIs',
+  'Event-driven and reactive workflows',
+  'Production debugging and maintainability',
+  'React-based internal and customer-facing tools',
+]
 
 export default function About() {
   return (
-    <motion.section
-        id="about"
-        className="py-20 px-6 md:px-20 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100"
-        initial={{ opacity: 0, y: 30 }}
+    <section id="about" className="scroll-mt-20 border-y border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-900/40">
+      <motion.div
+        className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[0.8fr_1.2fr] lg:px-8"
+        initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-    >
-      <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-200 mb-6">👨‍💻 About Me</h2>
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.55 }}
+      >
+        <div>
+          <p className="section-kicker">About</p>
+          <h2 className="section-title">Engineering with ownership, not just implementation.</h2>
+        </div>
 
-      <p className="text-gray-700 dark:text-gray-300 mb-4 max-w-3xl leading-relaxed">
-        I'm a Full Stack Developer with over 3 years of experience working with scalable microservices and web apps. At Infosys, I’ve built real-time dashboards, backend APIs, and full-stack tools using Java, Spring Boot, React.js, GraphQL, and more.
-      </p>
+        <div>
+          <p className="text-lg leading-8 text-slate-600 dark:text-slate-300">
+            I’m a full-stack software engineer with more than three years of experience working on scalable microservices and web applications. At Infosys, I’ve contributed to backend APIs, real-time dashboards, and full-stack tools using Java, Spring Boot, React, GraphQL, and related technologies.
+          </p>
+          <p className="mt-5 text-lg leading-8 text-slate-600 dark:text-slate-300">
+            I enjoy understanding why a system behaves the way it does, simplifying complex business logic, and turning production lessons into cleaner designs. Outside work, I focus on system design, DSA, and side projects that deepen my engineering judgment.
+          </p>
 
-      <p className="text-gray-700 dark:text-gray-300 mb-4 max-w-3xl leading-relaxed">
-        I’m currently exploring AI integrations and enjoy building side projects that solve real-world problems. Outside of work, I’m passionate about learning system design, solving DSA problems, and pushing code that matters.
-      </p>
-
-      <p className="text-gray-700 dark:text-gray-300 max-w-3xl leading-relaxed">
-        💼 I’m actively looking for full stack opportunities where I can make meaningful impact and grow with the team.
-      </p>
-    </motion.section>
-  );
+          <div className="mt-8 grid gap-3 sm:grid-cols-2">
+            {strengths.map((strength) => (
+              <div key={strength} className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 dark:border-slate-800 dark:bg-slate-950 dark:text-slate-300">
+                {strength}
+              </div>
+            ))}
+          </div>
+        </div>
+      </motion.div>
+    </section>
+  )
 }

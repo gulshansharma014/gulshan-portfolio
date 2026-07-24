@@ -9,17 +9,19 @@ import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
-    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
-      <Navbar></Navbar>
-      <section className="py-20 px-6 md:px-20 bg-gradient-to-br from-blue-50 to-white" id="home"> <Hero /> </section>
-      <section className="py-20 px-6 md:px-20 bg-gray-50" id="about"> <About /> </section>
-      <section className="py-20 px-6 md:px-20 bg-white" id="projects"> <Projects /> </section>
-      <section className="py-20 px-6 md:px-20 bg-gray-50" id="resume"> <Resume /> </section>
-      <section className="py-20 px-6 md:px-20 bg-white" id="contact"> <Contact /> </section>
-      <section className="py-20 px-6 md:px-20 bg-gray-100" id="footer"> <Footer /> </section>
-      <ScrollToTop></ScrollToTop>
+    <div className="min-h-screen bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+        <Resume />
+        <Contact />
+      </main>
+      <Footer />
+      <ScrollToTop />
     </div>
   )
 }
 
-export default App;
+export default App

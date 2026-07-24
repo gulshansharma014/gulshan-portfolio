@@ -1,14 +1,10 @@
 export default function Footer() {
   return (
-<footer className="py-4 text-center text-sm bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400">
-  <p>
-    Built with ☕ + 💻 by Gulshan Kumar • © {new Date().getFullYear()}
-  </p>
-  <p className="mt-1 italic text-xs text-gray-400 dark:text-gray-500">
-    “Powered by caffeine, compiler errors & ChatGPT” 👀
-  </p>
-</footer>
-
+    <footer className="border-t border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-950">
+      <div className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-7 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between lg:px-8 dark:text-slate-400">
+        <p>© {new Date().getFullYear()} Gulshan Kumar. All rights reserved.</p>
+        <p>Built with React, Vite, Tailwind CSS, and attention to detail.</p>
+      </div>
+    </footer>
   )
 }
-
