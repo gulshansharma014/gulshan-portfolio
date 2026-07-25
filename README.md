@@ -1,12 +1,71 @@
-# React + Vite
+# Gulshan Kumar — Engineering Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive engineering portfolio showcasing my professional
+experience, technical expertise, projects and approach to software
+engineering.
 
-Currently, two official plugins are available:
+## Live Portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[View the deployed portfolio](https://gulshan-dev.vercel.app)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This portfolio represents my work and technical direction as a Software
+Engineer focused on backend engineering, distributed systems and
+production-quality applications.
+
+It highlights:
+
+- Professional engineering experience
+- Backend and full-stack technical skills
+- Selected projects
+- Resume and career journey
+- Contact and professional links
+- Responsive light and dark themes
+
+## Tech Stack
+
+| Area | Technologies |
+|---|---|
+| Frontend | React 19, JavaScript |
+| Build Tool | Vite |
+| Styling | Tailwind CSS |
+| Animation | Framer Motion |
+| Deployment | Vercel |
+| Version Control | Git, GitHub |
+
+## Features
+
+- Responsive design for desktop, tablet and mobile
+- Light and dark theme support
+- Animated page transitions and interactions
+- Engineering-focused project showcase
+- Downloadable resume section
+- Contact and social links
+- SEO-friendly metadata
+- Accessible navigation
+- Smooth scrolling experience
+
+## Project Structure
+
+```text
+gulshan-portfolio/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Resume.jsx
+│   │   ├── ScrollToTop.jsx
+│   │   └── ThemeToggle.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+├── tailwind.config.js
+└── vite.config.js
