@@ -3,7 +3,7 @@ import { HiMenu, HiX } from 'react-icons/hi'
 import ThemeToggle from './ThemeToggle'
 
 const links = [
-  { label: 'About', href: '#about' },
+  { label: 'Journey', href: '#journey' },
   { label: 'Projects', href: '#projects' },
   { label: 'Resume', href: '#resume' },
   { label: 'Contact', href: '#contact' },
