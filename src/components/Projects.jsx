@@ -176,7 +176,7 @@ export default function Projects() {
         </motion.div>
 
         <motion.article
-          className="relative mt-14 overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-950 text-white shadow-2xl shadow-slate-300/40 dark:border-slate-800 dark:shadow-black/20"
+          className="relative mt-10 overflow-hidden rounded-3xl border border-slate-200 bg-slate-950 text-white shadow-2xl shadow-slate-300/40 sm:mt-14 sm:rounded-[2rem] dark:border-slate-800 dark:shadow-black/20"
           initial={{ opacity: 0, y: 32 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
@@ -185,39 +185,39 @@ export default function Projects() {
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(59,130,246,0.24),_transparent_35%)]" />
           <div className="pointer-events-none absolute -left-24 top-40 h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl" />
 
-          <div className="relative grid gap-12 px-6 py-10 sm:px-10 lg:grid-cols-[0.95fr_1.05fr] lg:px-14 lg:py-14">
-            <div>
-              <div className="flex flex-wrap items-center gap-3">
-                <span className="rounded-full border border-blue-400/30 bg-blue-400/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-blue-300">
+          <div className="relative grid min-w-0 gap-8 px-4 py-8 sm:gap-10 sm:px-8 sm:py-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12 lg:px-14 lg:py-14">
+            <div className="min-w-0">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+                <span className="rounded-full border border-blue-400/30 bg-blue-400/10 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.14em] text-blue-300 sm:px-4 sm:py-2 sm:text-xs sm:tracking-[0.18em]">
                   Featured project
                 </span>
-                <span className="rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-2 text-xs font-semibold text-emerald-300">
+                <span className="rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1.5 text-[10px] font-semibold text-emerald-300 sm:px-4 sm:py-2 sm:text-xs">
                   Live application
                 </span>
               </div>
 
-              <h3 className="mt-7 text-4xl font-extrabold tracking-tight sm:text-5xl">
+              <h3 className="mt-6 break-words text-3xl font-extrabold leading-tight tracking-tight sm:mt-7 sm:text-5xl">
                 AI Video Summarizer
               </h3>
 
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+              <p className="mt-4 max-w-2xl text-base leading-7 text-slate-300 sm:mt-6 sm:text-lg sm:leading-8">
                 A full-stack application that extracts YouTube transcripts and transforms them into concise AI-generated summaries, helping users understand long-form content faster.
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="mt-6 flex flex-wrap gap-2 sm:mt-8 sm:gap-3">
                 {technologies.map((technology) => (
-                  <span key={technology} className="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1.5 text-sm font-medium text-slate-300">
+                  <span key={technology} className="rounded-full border border-slate-700 bg-slate-900/70 px-2.5 py-1 text-xs font-medium text-slate-300 sm:px-3 sm:py-1.5 sm:text-sm">
                     {technology}
                   </span>
                 ))}
               </div>
 
-              <div className="mt-10 flex flex-wrap gap-4">
+              <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap sm:gap-4">
                 <a
                   href="https://ai-video-summarizer-frontend.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary"
+                  className="btn-primary w-full justify-center sm:w-auto"
                 >
                   View live project
                   <FaArrowRight size={14} />
@@ -227,7 +227,7 @@ export default function Projects() {
                   href="https://github.com/gulshansharma014/ai-video-summarizer"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-dark-secondary"
+                  className="btn-dark-secondary w-full justify-center sm:w-auto"
                 >
                   <FaGithub size={18} />
                   View source
@@ -235,14 +235,14 @@ export default function Projects() {
               </div>
             </div>
 
-            <div className="flex items-center">
+            <div className="min-w-0">
               <div className="w-full rounded-3xl border border-slate-700 bg-slate-900/80 p-3 shadow-2xl">
                 <div className="overflow-hidden rounded-2xl border border-slate-700 bg-slate-950">
                   <div className="flex items-center gap-2 border-b border-slate-800 px-4 py-3">
                     <span className="h-2.5 w-2.5 rounded-full bg-red-400" />
                     <span className="h-2.5 w-2.5 rounded-full bg-amber-400" />
                     <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
-                    <div className="ml-3 truncate rounded-md bg-slate-800 px-3 py-1 text-xs text-slate-500">
+                    <div className="ml-2 min-w-0 flex-1 truncate rounded-md bg-slate-800 px-2 py-1 text-[10px] text-slate-500 sm:ml-3 sm:px-3 sm:text-xs">
                       ai-video-summarizer-frontend.vercel.app
                     </div>
                   </div>
