@@ -120,7 +120,7 @@ export default function Hero() {
             {technologies.map((technology) => (
               <span
                 key={technology}
-                className="rounded-full border border-slate-200 bg-white/85 px-3.5 py-2 text-sm font-semibold text-slate-700 shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:border-blue-300 hover:text-blue-700 dark:border-slate-800 dark:bg-slate-900/80 dark:text-slate-300 dark:hover:border-blue-800 dark:hover:text-blue-300"
+                className="tech-pill"
               >
                 {technology}
               </span>
@@ -133,7 +133,7 @@ export default function Hero() {
           >
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white shadow-lg shadow-blue-600/25 transition hover:-translate-y-0.5 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-950"
+              className="btn-primary"
             >
               View featured work
               <FaArrowRight size={14} />
@@ -143,7 +143,7 @@ export default function Hero() {
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-slate-300 bg-white/70 px-5 py-3 font-semibold text-slate-700 backdrop-blur transition hover:-translate-y-0.5 hover:border-blue-400 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-200 dark:focus:ring-offset-slate-950"
+              className="btn-secondary"
             >
               View resume
             </a>
@@ -153,7 +153,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open Gulshan Kumar's GitHub profile"
-              className="rounded-xl border border-slate-300 bg-white/70 p-3 text-slate-700 backdrop-blur transition hover:-translate-y-0.5 hover:border-blue-400 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-200 dark:focus:ring-offset-slate-950"
+              className="icon-button"
             >
               <FaGithub size={20} />
             </a>
@@ -163,7 +163,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open Gulshan Kumar's LinkedIn profile"
-              className="rounded-xl border border-slate-300 bg-white/70 p-3 text-slate-700 backdrop-blur transition hover:-translate-y-0.5 hover:border-blue-400 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-200 dark:focus:ring-offset-slate-950"
+              className="icon-button"
             >
               <FaLinkedinIn size={20} />
             </a>
@@ -171,7 +171,7 @@ export default function Hero() {
 
           <motion.a
             variants={itemVariants}
-            href="#about"
+            href="#journey"
             className="mt-12 inline-flex items-center gap-2 text-sm font-semibold text-slate-500 transition hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400"
           >
             Explore my engineering journey

@@ -24,14 +24,14 @@ export default function Resume() {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-700 transition hover:border-blue-400 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-200"
+            className="btn-secondary"
           >
             Open resume <FaExternalLinkAlt size={13} />
           </a>
           <a
             href="/resume.pdf"
             download
-            className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700"
+            className="btn-primary"
           >
             Download PDF <FaDownload size={14} />
           </a>
